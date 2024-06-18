@@ -1,0 +1,128 @@
+* {
+  font-family: "Walter Turncoat", cursive;
+}
+
+body {
+  /* background-color: aliceblue; */
+  background: rgb(58, 65, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 65, 180, 0.5116421568627452) 21%,
+    rgba(253, 29, 29, 0.48363095238095233) 47%,
+    rgba(245, 206, 93, 0.3743872549019608) 78%
+  );
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 2px lightgrey;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+/* No longer need hardcoded player colors as they can choose their own */
+/* .piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: blue;
+} */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 3px white;
+  background-color: lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 1px 1px 2px gray;
+  margin: 0;
+}
+
+h1 {
+  color: red;
+  font-size: 3.5rem;
+}
+
+h2 {
+  color: gold;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: blue;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+table {
+  background: rgb(58, 65, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 65, 180, 0.5116421568627452) 21%,
+    rgba(253, 29, 29, 0.48363095238095233) 47%,
+    rgba(245, 206, 93, 0.3743872549019608) 78%
+  );
+  margin: auto;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+}
+
+button {
+  margin: 10px;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: greenyellow;
+  color: green;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px gray;
+}
+ol {
+  margin-bottom: 20px;
+}
